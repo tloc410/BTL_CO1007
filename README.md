@@ -44,3 +44,35 @@ mà trong đó mỗi cạnh của nó đều nằm trong k − 2 tam giác. Chú
 đã bán là các đỉnh và các cạnh biểu thị mối quan hệ hai đỉnh liên thuộc với cạnh này
 thường được mua cùng nhau. Như vậy 3-truss là một đồ thị biểu diễn tập hợp 3 sản phẩm
 thường được khách hàng mua cùng nhau. Từ đó sử dụng thuật toán ktruss để giải quyết vấn đề
+
+## Cách chạy code
+
+```sh
+g++ -o k_Truss k_Truss.cpp
+./k_truss k [file name]
+```
+
++ k : là số truss
++ file name : tên tập dữ liệu muốn chạy
+
+## Thực nghiệm
++ Thời gian chạy(s)  
+  
+| Số lượng tam giác|Preprocess  | K-truss | Tổng  |
+|------------------|------------|---------|-------|
+| 717719           | 4.487      | 4.564   | 9.051 |
+| 717719           | 4.391      | 4.919   | 9.31  |
+| 717719           | 4.397      | 4.509   | 8.906 |
+| 717719           | 4.405      | 4.831   | 9.236 |
+| 717719           | 4.374      | 4.798   | 9.172 |
+
++ Đếm tam giác
+
+| Tên file         | Số lượng tam giác|
+|------------------|------------------|
+| amazon0302       | 717,719          |
+| ca-HepPh         | 3,358,499        |
+| oregon2_010428   | 78,000           |
+| email-EuAll      | 267,313          |
+| cit-HepPh        | 1,276,868        |
+
