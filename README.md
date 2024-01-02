@@ -29,4 +29,18 @@ web Amazon. Nó dựa trên tính năng "Khách hàng đã mua cùng sản phẩ
 mua cùng với sản phẩm khác" của trang web Amazon. Nếu sản phẩm i thường xuyên
 được mua cùng với sản phẩm j, đồ thị sẽ chứa một cạnh hướng từ i đến j.
 Bộ dữ liệu có 262111 đỉnh, mỗi đỉnh thể hiện cho một sản phẩm, 1234877 cạnh, mỗi
-cạnh thể hiện cho hành vi mua của khách hàng trên nền tảng, 
+cạnh thể hiện cho hành vi mua của khách hàng trên nền tảng.
+
+## Tiếp cận vấn đề
+Bộ dữ liệu mà chúng em dùng để tìm đồ thị con đẳng cấu cho Bài tập lớn này là
+mạng lưới sản phẩm được mua cùng nhau của Amazon. Đây là một bộ dữ liệu lớn và
+phức tạp, cung cấp hành vi mua sắm của khách hàng trên nền tảng này được thu thập
+vào 02/03/2003. Vấn đề được đặt ra ở đây là nếu người dùng đã thêm vào giỏ hàng hai
+sản phẩm là vở trắng và bút bi thì chúng ta có thể đề xuất những món đồ có thể họ cần
+phải mua cùng như thế nào?
+
+Theo như định nghĩa k-truss đã được đề cập ở chương trước, k-truss là một đồ thị
+mà trong đó mỗi cạnh của nó đều nằm trong k − 2 tam giác. Chúng ta xem các sản phẩm
+đã bán là các đỉnh và các cạnh biểu thị mối quan hệ hai đỉnh liên thuộc với cạnh này
+thường được mua cùng nhau. Như vậy 3-truss là một đồ thị biểu diễn tập hợp 3 sản phẩm
+thường được khách hàng mua cùng nhau. Từ đó sử dụng thuật toán ktruss để giải quyết vấn đề
